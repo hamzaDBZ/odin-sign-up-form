@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: auto 100vh;
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000080;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 20vh;
+}
+
+.container img {
+    width: 100px;
+}
+
+.logo span {
+    color: white;
+    font-size: 80px;
+    font-family: 'norsebold';
+}
+
+.container > div:not(.logo) {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    font-size: 12px;
+    color: #ffffffe8;
+    text-align: center;
+}
+
+.container > div a {
+    color: #ffffffe8;
+}
+
+/* FORM STYLES */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    font-weight: 600;
+    line-height: 1.4;
+    width: 75%;
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+.intro p:last-child {
+    margin-bottom: 10px;
+}
+
+form > div {
+    background-color: #fff;
+    padding: 4px 0;
+    padding-bottom: 22px;
+    box-shadow: 0 8px 10px #00000026;
+}
+
+form > div > p:first-child {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    min-height: 25vh;
+    padding-left: 30px;
+    border: none;
+}
+
+fieldset div {
+    position: relative;
+    flex-basis: 45%;
+}
+
+fieldset label {
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    position: absolute;
+    top: -18px;
+}
+
+fieldset input {
+    width: 250px;
+    height: 30px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+fieldset input[type="password"]:invalid {
+    border: 2px solid red;
+}
+
+fieldset input:focus {
+    border: 2px solid blue;
+    outline: none;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+form button {
+    background-color: #596D48;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #274909;
+}
+
+form button:active {
+    background-color: red;
+}
+
+.main > p:last-child {
+    margin-left: 30px;
+    margin-top: 0;
+}
